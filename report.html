@@ -13952,7 +13952,7 @@ Ny7+WPF7swAAAABJRU5ErkJggg==
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
 Detergents_Paper &amp; Grocery seem to have a direct &amp; predictable linear relationship which makes sense following the investigation in question 2. Grocery was removed but can be reconstructed using Detergents_Paper data as a linear superposition.</p>
-<p>The data overall is normally distributed with several outliers that can be spotted falling outside the curve.</p>
+<p>Lots of the distributions display positive skews with several outliers that can be spotted falling outside the curves.</p>
 
 </div>
 </div>
@@ -18949,8 +18949,10 @@ The first four principal components explain .9311( P1 + P2 + P3 + P4 = .443 + .2
 <p>The first dimension in the question, places a significant positive weight on 'detergent_paper' (more than 0.7) and meaningful positive weight for 'Milk' and 'Grocery' (more than 0.4). This dimension is best categorized by customer spending on retail goods.
 The second dimension captures what the first dimension lacks, mainly 'Fresh' (more than 0.7), 'Frozen' and 'Delicatessen' (at about .5) so this is representative of a grocery store or restaurant.</p>
 <p>The overall variance coverage of these two dimensions is reliable in recovering the original information by over 70% at a simplification factor of 4 dimensions/components.</p>
-<p>If considering reducing from 6 to 4 input components/dimensions we retain over 90% of the data variance.
-The 3rd dimension correlate with 'Delicatessen' but uncorrelated with 'Fresh' (so maybe a specialty or pastry shop) while the fourth dimension heavily weighs towards 'Frozen' (maybe seafood restaurants) filling in a nearly complete picture of the data while reducing dimensionality.</p>
+<p>The 3rd dimension correlate with 'Delicatessen' but places negative weight on 'Fresh' so this reveals customers that buy a lot of Delicatessen but little Fresh, or vice versa. (so maybe a specialty or pastry shop).</p>
+<p>The fourth dimension heavily weighs towards 'Frozen' (maybe seafood restaurants) and places negative weight on Delicatessen since restaurants probably prepare their own.</p>
+<p>If considering reducing from 6 to 4 input components/dimensions we retain over 90% of the data variance and see patterns of spending in the categories throughout the dimensions.
+This fills in a nearly complete picture of the data while reducing dimensionality.</p>
 
 </div>
 </div>
@@ -19175,7 +19177,7 @@ The 3rd dimension correlate with 'Delicatessen' but uncorrelated with 'Fresh' (s
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11a8210d0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11b941090&gt;</pre>
 </div>
 
 </div>
@@ -20379,13 +20381,13 @@ K-means is advantageous when there are well defined clusters as the algorithm go
 For n = 3 clusters, the avg. silhoutte_score is:0.372313708076
 
 
-For n = 4 clusters, the avg. silhoutte_score is:0.337969395886
+For n = 4 clusters, the avg. silhoutte_score is:0.332870064265
 
 
-For n = 5 clusters, the avg. silhoutte_score is:0.295441470747
+For n = 5 clusters, the avg. silhoutte_score is:0.278184737578
 
 
-For n = 6 clusters, the avg. silhoutte_score is:0.277391949681
+For n = 6 clusters, the avg. silhoutte_score is:0.27831642769
 
 
 0.411818864386
